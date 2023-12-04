@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --cor-primaria: #FFFFFA;
+    --cor-secundaria: #080705;
+    --cor-terciaria: #702632;
+    --cor-hover: #912F40;
+
+    --font-pricipal: 'Krona One', sans-serif;
+    --font-secundaria: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho {
+    padding: 2%;
+    background: linear-gradient(var(--cor-terciaria), var(--cor-hover));
+}
+
+.cabecalho .menu {
+    display: flex;
+    gap: 80px;   
+    justify-content: center;
+}
+
+.cabecalho .menu .menu__Link{
+    font-family: var(--font-secundaria);
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--cor-primaria);
+    text-decoration: none;
+    
+}
+
+.apresentacao {
+    padding: 5% 15%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    display: flex;
+    gap: 10%;
+}
+
+.apresentacao  .conteudo {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao .conteudo .titulo {
+    font-size: 36px;
+    font-family: var(--font-pricipal);
+    text-align: center;
+}
+
+.apresentacao .conteudo .titulo .titulo__Destaque {
+    color: var(--cor-terciaria);
+}
+
+.apresentacao .conteudo .texto {
+    font-size: 24px;
+    font-family: var(--font-secundaria);
+    text-align: center;
+}
+
+.apresentacao .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.apresentacao .links .subtitulo {
+    font-family: 'Frona One', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.apresentacao .links .redes__Sociais {
+    background: linear-gradient(var(--cor-terciaria), var(--cor-hover));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    width: 350px;
+    text-align: center;
+    border: 2px solid var(--cor-secundaria);
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-primaria);
+    font-family:var(--font-secundaria);
+}
+
+.polaroid {
+    border-radius: 10px;
+    background-color: var(--cor-primaria);
+    box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+}
+
+.fotoPerfil {
+    max-width: 200px;
+    max-height: 1150px;
+    width: auto;
+    height: auto;
+}
+
+.apresentacao .links .redes__Sociais:hover {
+    background-color: var(--cor-hover);
+}
+
+.rodape {
+    padding: 24px;
+    color: var(--cor-primaria);
+    background: linear-gradient(var(--cor-terciaria), var(--cor-hover));
+    text-align: center;
+    font-family: var(--font-secundaria);
+    font-size: 24px;
+    font-weight: 400;
+}
